@@ -6,7 +6,7 @@ require 'csv'
 # set authentication variables and establish our SignalWire Client
 username = ENV['projectID']
 password = ENV['token']
-host = 'kody-guffey.signalwire.com'
+host = ''
 @client = Signalwire::REST::Client.new username, password, signalwire_space_url: host
 
 # request the message list from SignalWire
