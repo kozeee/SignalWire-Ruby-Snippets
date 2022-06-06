@@ -36,8 +36,6 @@ while jsonResponse['links']['next'] != nil
     jsonResponse['data'].each {|x| assignedNumbers.push(x['phone_number']['number'])}
 end
 
-    
-
 #Print the total numbers in a campaign
 puts "This campaign has: "+assignedNumbers.length.to_s+" phone numbers assigned"
 
